@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-const apiURL = import.meta.env.MODE === "development" ?'http://localhost:3000':'/';  // Adjust URL if needed for your backend
+const apiURL = import.meta.env.MODE === "development" ? 'http://localhost:3000/api' : '/api'; // Adjust URL for backend with /api
 
 // Get blogs by category
 export const getBlogs = (cat) => {
     if (!cat) {
-        cat = 'all';  // Default category is 'all' if no category is provided
+        cat = 'all'; // Default category is 'all' if no category is provided
     }
     return axios.get(`${apiURL}/blog/${cat}`)
         .then(result => {
@@ -44,7 +44,7 @@ export const getBlogbyid = (id) => {
 // Upload an image to the server or Cloudinary
 export const uploadFile = (file) => {
     const formData = new FormData();
-    formData.append('file', file);  // Append the file to the FormData object
+    formData.append('file', file); // Append the file to the FormData object
 
     const config = {
         headers: {
@@ -55,7 +55,7 @@ export const uploadFile = (file) => {
     return axios.post(`${apiURL}/blogimage`, formData, config)
         .then(result => {
             console.log('Image uploaded successfully:', result.data);
-            return result.data;  // Returning the Cloudinary response or server response
+            return result.data; // Returning the Cloudinary response or server response
         })
         .catch(error => {
             console.error('Error uploading image:', error);
