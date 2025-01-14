@@ -12,7 +12,7 @@ const Blogcard = (props) => {
                 <div className="flex flex-col w-full">
                     {/* Removed commented-out image */}
                     <div className="w-full h-[250px] bg-no-repeat bg-cover bg-center" 
-                         style={{ backgroundImage: `url(${apiURL}${blogdata.image})` }}> {/* Added /api to image URL */}
+                         style={{ backgroundImage: `url(${blogdata.image})` }}> {/* Added /api to image URL */}
                     </div>
                     <div className='p-2'>
                         <h5 className='mt-1 text-left'>{blogdata.title}</h5>
