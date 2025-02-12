@@ -4,7 +4,7 @@ import { Outlet, Link } from 'react-router-dom';
 const Layout = () => {
 
     const menu = [
-        {text:'Nature',path:'/'},
+        {text:'Health',path:'/'},
         {text:'Travel',path:'/'},
         {text:'Technology',path:'/'},
         {text:'Politics',path:'/'},
