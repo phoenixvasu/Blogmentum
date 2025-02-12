@@ -1,7 +1,7 @@
 const { Client } = require('pg');
 
 // Retrieve the DATABASE_URL from environment variables or use the hardcoded connection string
-const connectionString = process.env.DATABASE_URL || 'postgresql://blogdb_9d96_user:zxGeL3viaymdBO6rUkTpjTFT7FZiDZGW@dpg-cu2lnnbtq21c73811310-a.oregon-postgres.render.com/blogdb_9d96';
+const connectionString = process.env.DATABASE_URL || "postgresql://blogdb2_user:5rn8AaBN5jJLnwlVWI7VgTM1tB1Tc9TR@dpg-cum751hopnds73d8d7qg-a.oregon-postgres.render.com/blogdb2";
 
 // Create the PostgreSQL client with SSL configuration for Render PostgreSQL
 const client = new Client({
