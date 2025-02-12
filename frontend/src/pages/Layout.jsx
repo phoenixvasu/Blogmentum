@@ -4,11 +4,16 @@ import { Outlet, Link } from 'react-router-dom';
 const Layout = () => {
 
     const menu = [
-        {text:'Health',path:'/'},
-        {text:'Travel',path:'/'},
-        {text:'Technology',path:'/'},
-        {text:'Politics',path:'/'},
-    ]
+        { text: 'Technology', path: '/' },
+        { text: 'Programming', path: '/' },
+        { text: 'Finance', path: '/' },
+        { text: 'Health', path: '/' },
+        { text: 'Travel', path: '/' },
+        { text: 'Self-Improvement', path: '/' },
+        { text: 'Politics', path: '/' },
+        { text: 'Nature', path: '/' },
+    ];
+    
     return (
         <div>
             {/* <Header></Header> */}
