@@ -10,10 +10,10 @@ const path = require('path');
 
 // PostgreSQL connection string
 const pool = new Pool({
-  user: 'blogdb_9d96_user', // Your PostgreSQL user
+  user: 'blogdb2_user', // Your PostgreSQL user
   host: 'a.oregon-postgres.render.com', // Database host
-  database: 'blogdb_9d96', // Database name
-  password: 'zxGeL3viaymdBO6rUkTpjTFT7FZiDZGW', // Your database password
+  database: 'blogdb2', // Database name
+  password: '5rn8AaBN5jJLnwlVWI7VgTM1tB1Tc9TR', // Your database password
   port: 5432, // Default PostgreSQL port
   ssl: {
     rejectUnauthorized: false, // Set to false to allow self-signed certificates (for development environments)
